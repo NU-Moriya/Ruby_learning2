@@ -15,6 +15,11 @@ if menu[:caffe_latte] <= 500
   puts "カフェラテをください"
 end
 
+# menu[:coffee]
+# menu.has_key? :caffe_latte　　Rubyは引数の（）を省略できる
+# menu.has_key?(:caffe_latte)
+# link_to "", xx_path
+# link_to("", xx_path)　上下同じこと
 puts "カフェラテをください" if menu.has_key?(:caffe_latte) &&
   menu[:caffe_latte] <= 500 #上記に同じ。キーがない場合はエラーになるため、こちらの方が好ましい
 
